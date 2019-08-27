@@ -5,15 +5,16 @@ import Layout from '../components/layout'
 import Image from '../components/image'
 import SEO from '../components/seo'
 
+import me from '../images/me_lake_mason.jpg'
+
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
+    <SEO title="Home" keywords={[`lane sawyer`, `developer`, `react`]} />
+    <h1>Hey there, I'm Lane</h1>
+    <img src={me} alt="Me" />
+    <p>
+      I'm an IT consultant. This is my website. It's clearly a work in progress.
+    </p>
     <Link to="/kaladin">Learn about my amazing pupper, Kaladin!</Link>
   </Layout>
 )
