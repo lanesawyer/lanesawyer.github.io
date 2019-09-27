@@ -1,12 +1,10 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import React from 'react'
 
 const Footer = () => (
   <footer
     style={{
       background: '#0038A8',
-      color: 'white'
+      color: 'white',
     }}
   >
     <div
@@ -22,8 +20,11 @@ const Footer = () => (
         style={{
           color: `white`,
           textDecoration: `none`,
-        }} 
-        href="https://www.gatsbyjs.org">Gatsby</a>
+        }}
+        href="https://www.gatsbyjs.org"
+      >
+        Gatsby
+      </a>
     </div>
   </footer>
 )
