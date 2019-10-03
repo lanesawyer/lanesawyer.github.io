@@ -1,10 +1,11 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import React from 'react'
+import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
+import styled from 'styled-components';
 
 const MyLink = ({ text, path }) => (
   <Link
-    to={`/${path}`}
+    to={path}
     style={{
       color: `white`,
       textDecoration: `none`,
@@ -15,17 +16,23 @@ const MyLink = ({ text, path }) => (
   </Link>
 )
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#9B4F96`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+const MyExternalLink = styled.a`
+  color: white;
+  text-decoration: none;
+  padding: 0 30px 0 0;
+`;
+
+const Header = styled.header`
+  background: #9B4F96;
+  margin-bottom: 1.45rem;
+  grid-column: 2 / 4;
+  grid-row: 1;
+`;
+
+const HeaderComponent = ({ siteTitle }) => (
+  <Header>
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >
@@ -35,26 +42,24 @@ const Header = ({ siteTitle }) => (
 
       <MyLink text="Blog" path="/blog" />
       <MyLink text="Kaladin" path="/kaladin" />
-      <MyLink text="Github" path="https://github.com/lanesawyer" />
-      <MyLink text="Twitter" path="https://twitter.com/lanesawyer" />
-      <MyLink text="LinkedIn" path="https://www.linkedin.com/in/lanesawyer/" />
-      <MyLink text="Medium" path="https://medium.com/@lanesawyer" />
-      <MyLink text="Fitbit" path="https://www.fitbit.com/user/244S2X" />
-      <MyLink text="Strava" path="https://www.strava.com/athletes/6106415" />
-      <MyLink
-        text="Goodreads"
-        path="https://www.goodreads.com/user/show/17625748-lane-sawyer"
-      />
+      <MyExternalLink href="https://github.com/lanesawyer">GitHub</MyExternalLink>
+      <MyExternalLink href="https://twitter.com/lanesawyer">Twitter</MyExternalLink>
+      <MyExternalLink href="https://www.linkedin.com/in/lanesawyer/">LinkedIn</MyExternalLink>
+      <MyExternalLink href="https://medium.com/@lanesawyer">Medium</MyExternalLink>
+      <MyExternalLink href="https://www.fitbit.com/user/244S2X">Fitbit</MyExternalLink>
+      <MyExternalLink href="https://www.strava.com/athletes/6106415">Strava</MyExternalLink>
+      <MyExternalLink href="https://www.goodreads.com/user/show/17625748-lane-sawyer">Goodreads</MyExternalLink>
+      <MyExternalLink href="https://adventure.lanesawyer.dev">Adventure Planner</MyExternalLink>
     </div>
-  </header>
+  </Header>
 )
 
-Header.propTypes = {
+HeaderComponent.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+HeaderComponent.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default HeaderComponent;

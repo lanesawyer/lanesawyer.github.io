@@ -1,12 +1,15 @@
 import React from 'react'
+import styled from 'styled-components';
 
-const Footer = () => (
-  <footer
-    style={{
-      background: '#0038A8',
-      color: 'white',
-    }}
-  >
+const Footer = styled.footer`
+  background: #0038A8;
+  color: white;
+  grid-column: 1 / 2;
+  grid-row: 3;
+`;
+
+const FooterComponent = () => (
+  <Footer>
     <div
       style={{
         margin: `0 auto`,
@@ -26,7 +29,7 @@ const Footer = () => (
         Gatsby
       </a>
     </div>
-  </footer>
+  </Footer>
 )
 
-export default Footer
+export default FooterComponent;
