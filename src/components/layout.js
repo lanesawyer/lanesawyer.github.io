@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import Header from './header'
 import Footer from './footer'
 import './layout.css'
+import './dark.css'
 
 const Grid = styled.div`
   display: grid;

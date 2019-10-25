@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import styled from 'styled-components';
+import colors from "./colors";
 
 const MyLink = ({ text, path }) => (
   <Link
@@ -23,7 +24,7 @@ const MyExternalLink = styled.a`
 `;
 
 const Header = styled.header`
-  background: #9B4F96;
+  background: ${colors.primary};
   margin-bottom: 1.45rem;
   grid-column: 2 / 4;
   grid-row: 1;
@@ -40,6 +41,7 @@ const HeaderComponent = ({ siteTitle }) => (
         <MyLink text={siteTitle} path="/" />
       </h1>
 
+      <MyLink text="About" path="/about" />
       <MyLink text="Blog" path="/blog" />
       <MyLink text="Kaladin" path="/kaladin" />
       <MyExternalLink href="https://github.com/lanesawyer">GitHub</MyExternalLink>
@@ -49,7 +51,6 @@ const HeaderComponent = ({ siteTitle }) => (
       <MyExternalLink href="https://www.fitbit.com/user/244S2X">Fitbit</MyExternalLink>
       <MyExternalLink href="https://www.strava.com/athletes/6106415">Strava</MyExternalLink>
       <MyExternalLink href="https://www.goodreads.com/user/show/17625748-lane-sawyer">Goodreads</MyExternalLink>
-      <MyExternalLink href="https://adventure.lanesawyer.dev">Adventure Planner</MyExternalLink>
     </div>
   </Header>
 )

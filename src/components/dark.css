@@ -1,0 +1,7 @@
+/* DARK MODE! THAT TIES INTO YOUR OS THEME! WFT WE LIVE IN THE FUTURE 🎊 */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}

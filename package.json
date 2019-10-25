@@ -2,7 +2,7 @@
   "name": "lane-sawyer",
   "private": true,
   "description": "A website built for Lane Sawyer, by Lane Sawyer.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "Lane Sawyer <helloworld@lanesawyer.dev>",
   "dependencies": {
     "gatsby": "^2.14.0",
