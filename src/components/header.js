@@ -46,6 +46,7 @@ const HeaderComponent = ({ siteTitle }) => (
       <MyLink text="Kaladin" path="/kaladin" />
       <MyExternalLink href="https://github.com/lanesawyer">GitHub</MyExternalLink>
       <MyExternalLink href="https://twitter.com/lanesawyer">Twitter</MyExternalLink>
+      <MyExternalLink rel="me" href="https://mastodon.social/@lanesawyer">Mastodon</MyExternalLink>
       <MyExternalLink href="https://www.linkedin.com/in/lanesawyer/">LinkedIn</MyExternalLink>
       <MyExternalLink href="https://medium.com/@lanesawyer">Medium</MyExternalLink>
       <MyExternalLink href="https://www.fitbit.com/user/244S2X">Fitbit</MyExternalLink>
