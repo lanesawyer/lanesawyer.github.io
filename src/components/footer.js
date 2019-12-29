@@ -9,7 +9,7 @@ const FooterComponent = () => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      © {new Date().getFullYear()}
+      &copy; {new Date().getFullYear()}
     </div>
     <div>
       Built with

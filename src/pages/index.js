@@ -16,19 +16,10 @@ const IndexPage = () => (
     </p>
 
     <p>
-      It looks wonky because I'm playing around with CSS Grid and got distracted with my{" "}
-      <a href="https://adventure.lanesawyer.dev">Adventure Planner</a> project.
+      It looks wonky because I'm playing around with CSS Grid and got distracted with other endeavors.
     </p>
 
-    <p>
-      I'm also distracted by some CSS art I've started building!
-    </p>
-    <iframe height="656" style={{width: "100%" }} scrolling="no" title="Square-Pokeball" src="https://codepen.io/lanesawyer/embed/xxxgYQN?height=656&theme-id=dark&default-tab=html,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
-  See the Pen <a href='https://codepen.io/lanesawyer/pen/xxxgYQN'>Square-Pokeball</a> by Lane Sawyer
-  (<a href='https://codepen.io/lanesawyer'>@lanesawyer</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-    <Link to="/kaladin">And if you like dogs, learn way too much about my amazing pupper, Kaladin!</Link>
+    <Link to="/kaladin">If you like dogs, learn way too much about my amazing pupper, Kaladin!</Link>
   </Layout>
 )
 
