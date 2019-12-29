@@ -1,16 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
-import colors from './colors'
-
-const Footer = styled.footer`
-  background: ${colors.secondary};
-  color: white;
-  grid-column: 1 / 2;
-  grid-row: 3;
-`
 
 const FooterComponent = () => (
-  <Footer>
+  <footer>
     <div
       style={{
         margin: `0 auto`,
@@ -39,10 +30,10 @@ const FooterComponent = () => (
           React
         </li>
         <li>
-          CSS3 (for example, I'm using CSS Grid to lay everything out in different ways)
+          HTML5 (for example, change your OS's mode from light to dark and see what happens to my site <span role="img" aria-label="big smile">😁</span>)
         </li>
         <li>
-          HTML5 (for example, change your OS's mode from light to dark and see what happens to my site 😁)
+          CSS3 (for example, I'm using CSS Grid to lay everything out in different ways)
         </li>
         <li>
           DuckDuckGo (that's right, you can get technical answers just fine on DuckDuckGo! Make the switch!)
@@ -52,7 +43,7 @@ const FooterComponent = () => (
         </li>
       </ul>
     </div>
-  </Footer>
+  </footer>
 )
 
 export default FooterComponent

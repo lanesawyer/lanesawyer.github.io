@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #9B4F96;
+    --secondary-color: #0038A8;
+    --tertiary-color: #36AF9B;
+    --quaternary-color: #AFB86F;
+    --quinary-color: #F0F093;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+#grid {
+    display: grid;
+    grid-template:
+        "header"
+        "main"
+        "footer";
+    grid-gap: 10px;
+}
+
+header {
+    grid-area: header;
+    background: var(--primary-color);
+    margin-bottom: 1.45rem;
+}
+
+header a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+}
+
+main {
+    grid-area: main;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0px 1.0875rem 1.45rem;
+    padding-top: 0;
+}
+
+h1 {
+    margin-bottom: 1.45rem;
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+footer {
+    grid-area: footer;
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+@media only screen and (min-width: 600px) {
+    #grid {
+        grid-template:
+            ". . header header"
+            ". main main ."
+            "footer footer . .";
+    }
+}
+
+/* DARK MODE! IT TIES INTO YOUR OS THEME! WTF WE LIVE IN THE FUTURE 🎊 */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--black);
+        color: var(--white);
+    }
+}

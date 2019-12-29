@@ -4,14 +4,12 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import H1 from '../components/h1'
-
 import me from '../images/me_lake_mason.jpg'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`lane sawyer`, `developer`, `react`]} />
-    <H1>Hey there, I'm Lane</H1>
+    <h1>Hey there, I'm Lane</h1>
     <img src={me} alt="Me" width={300} />
     <p>
       I'm an IT consultant. This is my website. It's clearly a work in progress.
@@ -25,7 +23,7 @@ const IndexPage = () => (
     <p>
       I'm also distracted by some CSS art I've started building!
     </p>
-    <iframe height="656" style={{width: "100%" }} scrolling="no" title="Square-Pokeball" src="https://codepen.io/lanesawyer/embed/xxxgYQN?height=656&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+    <iframe height="656" style={{width: "100%" }} scrolling="no" title="Square-Pokeball" src="https://codepen.io/lanesawyer/embed/xxxgYQN?height=656&theme-id=dark&default-tab=html,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
   See the Pen <a href='https://codepen.io/lanesawyer/pen/xxxgYQN'>Square-Pokeball</a> by Lane Sawyer
   (<a href='https://codepen.io/lanesawyer'>@lanesawyer</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
